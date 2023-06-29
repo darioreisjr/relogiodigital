@@ -29,23 +29,29 @@ export default function App() {
 
   return (
    <section className='h-screen flex flex-col justify-center items-center bg-gray-950'>
+
     <h1 className='text-gray-200 p-3 text-4xl'>RELÓGIO DIGITAL</h1>
 
     <div className='flex items-center gap-2'>
+
       <div className='flex justify-center items-center rounded-lg'>
-          <h2 className='text-4xl text-gray-200 bg-gray-800  p-14  justify-center items-center'>{hora}</h2>
-        </div>
-        <div className='flex justify-center items-center'>
-          <h2 className='text-4xl text-gray-200 bg-gray-800 p-14  justify-center items-center'>
+        <h2 className='sm:text-4xl text-2xl text-gray-200 bg-gray-800  sm:p-14 p-11  justify-center items-center'>{hora}</h2>
+      </div>
+
+      <div className='flex justify-center items-center'>
+        <h2 className='sm:text-4xl text-2xl text-gray-200 bg-gray-800 sm:p-14 p-11  justify-center items-center'>
           {minuto <= 9 ? `0${minuto}` : `${minuto}` }
-          </h2>
-        </div>
-        <div className='flex justify-center items-center'>
-          <h2 className='text-4xl text-gray-200 bg-gray-800  p-14 rounded-lg justify-center items-center'>
+         </h2>
+      </div>
+
+      <div className='flex justify-center items-center'>
+        <h2 className='sm:text-4xl text-2xl text-gray-200 bg-gray-800  sm:p-14 p-11 rounded-lg justify-center items-center'>
           {segundo <= 9 ? `0${segundo}` : `${segundo}` }
-          </h2>
-        </div>
+        </h2>
+      </div>
+
     </div>
+
    </section>
   );
 }
